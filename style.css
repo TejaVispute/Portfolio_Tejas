@@ -1,6 +1,6 @@
 * {
     /* border: 1px solid red; */
-
+    transition: 0.2s linear;
 }
 
 .man-image {
@@ -18,24 +18,13 @@
 
 }
 
-@media only screen and (max-width: 1024px) {
-    .man-image {
-        justify-content: flex-end;
-    }
-
-    .man-image img {
-        width: 55%;
-        height: 80%;
-    }
-}
-
-
 
 /* about css */
-.about-heading{
+.about-heading {
     margin: 1rem 0;
     padding: 10px 0;
 }
+
 .about-container {
     display: flex;
     justify-content: center;
@@ -51,12 +40,13 @@
     /* background-color: red; */
     padding: 2rem;
     width: 40%;
-    
+
 }
 
 .my-img-wrapper img {
     border-radius: 50%;
     box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    background-color: indigo !important;
 }
 
 
@@ -67,6 +57,49 @@
 
 
 
+
+
+/* right section of about wrapper */
+
+.right-about-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Languages Known section  */
+
+.languages-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 2rem;
+}
+
+/* .languages-section img {
+
+} */
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 1024px) {
+    .man-image {
+        justify-content: flex-end;
+    }
+
+    .man-image img {
+        width: 55%;
+        height: 80%;
+    }
+}
+
 /* media query for about page */
 @media only screen and (max-width: 600px) {
     .about-wrapper {
@@ -76,18 +109,37 @@
     .about-container {
         padding: 1rem;
     }
-    .right-about-wrapper{
+
+    .right-about-wrapper {
         width: 100%;
     }
 
 }
 
-@media only screen and (max-width: 477px) {
+/* @media only screen and (max-width: 477px) {
     .about-wrapper {
         flex-direction: column;
     }
-    .my-img-wrapper{
+
+    .my-img-wrapper {
         width: 100%;
         padding: 1rem;
-    } 
+    }
+} */
+
+@media only screen and (max-width: 900px) {
+    .about-wrapper {
+        flex-direction: column;
+    }
+
+    .my-img-wrapper {
+        width: 100%;
+        padding: 1rem;
+        display: flex;
+        justify-content: center;
+    }
+
+    .right-about-wrapper {
+        width: 100%;
+    }
 }
