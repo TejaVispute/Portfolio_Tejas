@@ -1,8 +1,11 @@
 * {
     /* border: 1px solid red; */
     transition: 0.2s linear;
-}
 
+}
+body{
+    overflow-x: hidden;
+}
 .man-image {
     /* background-color: rebeccapurple; */
     display: flex;
@@ -112,6 +115,28 @@
 
     .right-about-wrapper {
         width: 100%;
+    }
+
+    .languages-section {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 1rem;
+    }
+
+    .right-about-wrapper {
+        padding: 0px auto;
+    }
+
+    .about-heading {
+        margin: 0;
+    }
+
+    .about-container {
+        padding: 1rem;
+    }
+
+    .my-img-wrapper {
+        padding: 0px;
     }
 
 }
