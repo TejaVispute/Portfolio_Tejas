@@ -21,12 +21,17 @@ html {
 }
 
 .man-image img {
-    width: 45%;
-    height: 90%;
+    width: 30%;
+    /* height: 30%; */
+    position: relative;
+    top: 120px;
 
 
 }
-
+#hamburger{
+    position: relative;
+    right: 12%;
+}
 
 /* about css */
 .about-heading {
@@ -149,6 +154,7 @@ html {
 @media only screen and (max-width: 1024px) {
     .man-image {
         justify-content: flex-end;
+        top: -100px;
     }
 
     .man-image img {
@@ -224,6 +230,11 @@ html {
     .my-img-wrapper {
         padding: 0px;
     }
+    .man-image {
+        /* justify-content: flex-end; */
+        position: relative;
+        top: -50px;
+    }
 
 }
 
@@ -258,4 +269,9 @@ html {
     .right-about-wrapper {
         width: 100%;
     }
+}
+
+
+.parent-container{
+    width: 100%;
 }
