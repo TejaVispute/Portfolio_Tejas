@@ -1114,6 +1114,11 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+:is(.dark .dark\:shadow-slate-800) {
+  --tw-shadow-color: #1e293b;
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
 @media (min-width: 480px) {
   .sm\:left-10 {
     left: 2.5rem;
