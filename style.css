@@ -124,10 +124,14 @@ html {
 .image-project {
     height: 60%;
     /* background-color: red; */
+    /* object-fit: cover; */
 }
 
 .image-project img {
     height: 100%;
+    object-fit: cover;
+    background-position: center;
+    border-radius: 1rem;
 }
 
 
@@ -176,6 +180,9 @@ html {
         width: 90%;
         grid-template-columns: 1fr;
         /* grid-template-rows: 1fr 1fr; */
+    }
+    .project-container .project-wrapper >div{
+        height: 350px;
     }
 }
 
