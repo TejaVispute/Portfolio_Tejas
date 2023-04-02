@@ -20,17 +20,19 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 
-<body class="font-nunito ">
+<body class="font-nunito">
     <!-- This is parent contaienr with full vh height  -->
-    <div class="parent-container h-screen w-screen">
+    <div class="parent-container h-screen w-screen  dark:bg-slate-900">
         <!-- container inside main parent contaienr -->
-        <div class="h-1/2 lg:h-screen w-screen bg-gradient-to-t from-indigo-200 dark:from-slate-800 dark:to-slate-900  relative overflow-hidden">
+        <div
+            class="h-1/2 lg:h-screen w-screen bg-gradient-to-t from-indigo-200 dark:from-slate-800 dark:to-slate-900  relative overflow-hidden">
             <!-- Navbar starts from here -->
             <nav class="w-full fixed top-0 bg-white z-10 dark:bg-slate-900">
                 <div class="container py-5 mx-auto flex justify-between items-center">
                     <div class="image mx-10">
                         <!-- <img src="" alt=""> -->
-                        <span class="font-bold text-indigo-900 lg:text-2xl md:text-xl sm:text-sm dark:text-white">Portfolio</span>
+                        <span
+                            class="font-bold text-indigo-900 lg:text-2xl md:text-xl sm:text-sm dark:text-white">Portfolio</span>
                     </div>
                     <ul class="hidden md:flex space-x-6 text-gray-600 font-bold text-sm uppercase dark:text-gray-100">
                         <li class="hover:text-gray-500">
@@ -49,7 +51,8 @@
                             <a href="#">Contact</a>
                         </li>
                     </ul>
-                    <span class="mr-20 hidden md:block "><i class="fa-solid fa-moon cursor-pointer text-2xl dark:text-white"></i></span>
+                    <span class="mr-20 hidden md:block "><i
+                            class="fa-solid fa-moon cursor-pointer text-2xl dark:text-white"></i></span>
 
                     <span id="hamburger" class="md:hidden mr-6 text-3xl cursor-pointer z-50"><i
                             class="fa-solid fa-bars "></i></span>
@@ -96,21 +99,21 @@
             </div>
             <!-- texts -->
             <div
-                class="hidden lg:flex flex-col gap-5 text-justify rounded-md absolute top-0 bottom-0 m-auto right-10 bg-white h-fit p-6 w-1/3 shadow-xl">
-                <h1 class="text-4xl font-bold text-indigo-900">Hi, I'm Tejas</h1>
+                class="hidden lg:flex flex-col gap-5 text-justify rounded-md absolute top-0 bottom-0 m-auto right-10 bg-white dark:bg-slate-900 h-fit p-6 w-1/3 shadow-xl">
+                <h1 class="text-4xl font-bold text-indigo-900 dark:shadow-slate-800">Hi, I'm Tejas</h1>
                 <p class="text-gray-400">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident quo cum
                     esse nam eum nisi soluta,
                     atque vel beatae est.</p>
                 <a class="bg-indigo-600 text-white text-xl w-fit px-3 py-2 rounded-md font-semibold "
-                    href="#contact">Hire me</a>
+                    href="https://drive.google.com/file/d/1Y3hvctrExPymMu8fAJetK6SluWY5GDk-/view?usp=share_link" download=""> Resume</a>
             </div>
         </div>
 
         <!-- about me page -->
-        <h3 class=" about-heading text-center font-bold text-3xl text-indigo-600"> About Me</h3>
-        <div class="about-container" id="aboutsection">
+        <h3 class=" about-heading text-center font-bold text-3xl text-indigo-600  "> About Me</h3>
+        <div class="about-container  dark:bg-slate-900" id="aboutsection">
 
-            <div class="about-wrapper flex">
+            <div class="about-wrapper flex ">
                 <!-- left image -->
                 <div class="my-img-wrapper">
                     <img class="w-96" src="./images//Fotor_AI (1).png" alt="">
@@ -153,9 +156,9 @@
 
 
         <h1 class="text-center text-2xl p-3 font-bold text-indigo-600">Project Samples</h1>
-        <div class="project-container">
+        <div class="project-container  dark:bg-slate-900">
             <div class="project-wrapper">
-                <div class="project-card">
+                <div class="project-card" data-aos="fade-up-right">
                     <div class="image-project">
                         <img src="./images/airbnb.jpg" alt="">
                     </div>
@@ -164,7 +167,7 @@
                     </div>
                     <button class="btn-live">Watch live</button>
                 </div>
-                <div class="project-card">
+                <div class="project-card" data-aos="fade-down">
                     <div class="image-project">
                         <img src="./images/flower-website.jpg" alt="">
                     </div>
@@ -173,7 +176,7 @@
                     </div>
                     <button class="btn-live">Watch live</button>
                 </div>
-                <div class="project-card">
+                <div class="project-card" data-aos="fade-up-left">
                     <div class="image-project">
                         <img src="./images/quiz-app.jpg" alt="">
                     </div>
@@ -182,7 +185,7 @@
                     </div>
                     <button class="btn-live">Watch live</button>
                 </div>
-                <div class="project-card">
+                <div class="project-card" data-aos="fade-up-right">
                     <div class="image-project">
                         <img src="./images/weather-app.jpg" alt="">
                     </div>
@@ -191,7 +194,7 @@
                     </div>
                     <button class="btn-live">Watch live</button>
                 </div>
-                <div class="project-card">
+                <div class="project-card" data-aos="fade-up">
                     <div class="image-project">
                         <img src="https://pngimg.com/d/under_construction_PNG42.png" alt="">
                     </div>
@@ -200,7 +203,7 @@
                     </div>
                     <button class="btn-live">Watch live</button>
                 </div>
-                <div class="project-card">
+                <div class="project-card" data-aos="fade-up-left">
                     <div class="image-project">
                         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHAOs93fBgESugOtE0ZZvLkRb6WlOWVK6B_A&usqp=CAU"
                             alt="">
@@ -219,10 +222,11 @@
 
 
         <!-- This is contact Us section -->
-        <section class='contact-us-container p-5' id='contact'>
+        <section class='contact-us-container p-5  dark:bg-slate-900' id='contact'>
             <h1 class='p-5 text-center text-3xl font-bold text-indigo-600'>Contact </h1>
             <h4 class=" text-center text-2xl font-bold text-black pb-5">Have Question ?</h4>
-            <p class="text-center text-sm font-bold text-gray-500 pb-5">Do You have any idea? Let's discuss and sew what we can do together</p>
+            <p class="text-center text-sm font-bold text-gray-500 pb-5">Do You have any idea? Let's discuss and sew what
+                we can do together</p>
             <div class="contact-us-wrapper">
                 <div class="left-map-section">
                     <Map />
