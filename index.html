@@ -24,15 +24,15 @@
     <!-- This is parent contaienr with full vh height  -->
     <div class="parent-container h-screen w-screen">
         <!-- container inside main parent contaienr -->
-        <div class="h-1/2 lg:h-screen w-screen bg-gradient-to-t from-indigo-200 relative overflow-hidden">
+        <div class="h-1/2 lg:h-screen w-screen bg-gradient-to-t from-indigo-200 dark:from-slate-800 dark:to-slate-900  relative overflow-hidden">
             <!-- Navbar starts from here -->
-            <nav class="w-full fixed top-0 bg-white z-10">
+            <nav class="w-full fixed top-0 bg-white z-10 dark:bg-slate-900">
                 <div class="container py-5 mx-auto flex justify-between items-center">
                     <div class="image mx-10">
                         <!-- <img src="" alt=""> -->
-                        <span class="font-bold text-indigo-900 lg:text-2xl md:text-xl sm:text-sm">Portfolio</span>
+                        <span class="font-bold text-indigo-900 lg:text-2xl md:text-xl sm:text-sm dark:text-white">Portfolio</span>
                     </div>
-                    <ul class="hidden md:flex space-x-6 text-gray-600 font-bold text-sm uppercase">
+                    <ul class="hidden md:flex space-x-6 text-gray-600 font-bold text-sm uppercase dark:text-gray-100">
                         <li class="hover:text-gray-500">
                             <a href="#">Home</a>
                         </li>
@@ -49,7 +49,7 @@
                             <a href="#">Contact</a>
                         </li>
                     </ul>
-                    <span class="mr-20 hidden md:block "><i class="fa-solid fa-moon cursor-pointer text-2xl"></i></span>
+                    <span class="mr-20 hidden md:block "><i class="fa-solid fa-moon cursor-pointer text-2xl dark:text-white"></i></span>
 
                     <span id="hamburger" class="md:hidden mr-6 text-3xl cursor-pointer z-50"><i
                             class="fa-solid fa-bars "></i></span>
@@ -113,7 +113,7 @@
             <div class="about-wrapper flex">
                 <!-- left image -->
                 <div class="my-img-wrapper">
-                    <img class="w-96" src="./images/Tejas_Image.png" alt="">
+                    <img class="w-96" src="./images//Fotor_AI (1).png" alt="">
                 </div>
                 <!-- right content -->
                 <div class="right-about-wrapper">
@@ -228,14 +228,14 @@
                     <Map />
                 </div>
                 <div class="right-input-section">
-                    <form class="w-full max-w-lg mx-auto">
+                    <form action="https://formsubmit.co/el/zipavi" method="POST" class="w-full max-w-lg mx-auto">
                         <div class="flex flex-wrap -mx-3 mb-1">
                             <div class="w-full px-3">
                                 <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
                                     for="name">
                                     Name
                                 </label>
-                                <input
+                                <input name="name"
                                     class="appearance-none block w-full bg-gray-100 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                                     id="name" type="text" placeholder="John Doe" />
                             </div>
@@ -246,7 +246,7 @@
                                     for="email">
                                     Email
                                 </label>
-                                <input
+                                <input name="email"
                                     class="appearance-none block w-full bg-gray-100 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                                     id="email" type="email" placeholder="johndoe@example.com" />
                             </div>
@@ -257,7 +257,7 @@
                                     for="message">
                                     Message
                                 </label>
-                                <textarea
+                                <textarea name="message"
                                     class="appearance-none block w-full bg-gray-100 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                                     id="message" rows="2" placeholder="Enter your message"></textarea>
                             </div>
