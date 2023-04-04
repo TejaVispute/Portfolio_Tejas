@@ -41,14 +41,14 @@
                         <li class="hover:text-gray-500">
                             <a href="#aboutsection">skills</a>
                         </li>
-                        <li class="hover:text-gray-500">
+                        <!-- <li class="hover:text-gray-500">
                             <a href="#">Services</a>
+                        </li> -->
+                        <li class="hover:text-gray-500">
+                            <a href="#work">Work</a>
                         </li>
                         <li class="hover:text-gray-500">
-                            <a href="#">Work</a>
-                        </li>
-                        <li class="hover:text-gray-500">
-                            <a href="#">Contact</a>
+                            <a href="#contact">Contact</a>
                         </li>
                     </ul>
                     <span class="mr-20 hidden md:block "><i
@@ -65,14 +65,14 @@
                         <li>
                             <a href="#aboutsection">Skills</a>
                         </li>
-                        <li>
+                        <!-- <li>
                             <a href="#">Services</a>
+                        </li> -->
+                        <li>
+                            <a href="#work">Work</a>
                         </li>
                         <li>
-                            <a href="#">Work</a>
-                        </li>
-                        <li>
-                            <a href="#">Contact</a>
+                            <a href="#contact">Contact</a>
                         </li>
                     </ul>
 
@@ -80,41 +80,42 @@
             </nav>
 
             <!-- intro content starts here  -->
-      <div>
-              <!-- image  -->
-              <div class="man-image">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/A_Humble_Cartoon_Businessman.svg/1582px-A_Humble_Cartoon_Businessman.svg.png"
-                    alt="" />
-            </div>
+            <div>
+                <!-- image  -->
+                <div class="man-image">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/A_Humble_Cartoon_Businessman.svg/1582px-A_Humble_Cartoon_Businessman.svg.png"
+                        alt="" />
+                </div>
 
 
-            <!-- circle -->
-            <div
-                class="hidden lg:block absolute right-0 left-0 mx-auto -bottom-1/4 w-big h-big -z-10 bg-indigo-900 rounded-full ">
+                <!-- circle -->
+                <div
+                    class="hidden lg:block absolute right-0 left-0 mx-auto -bottom-1/4 w-big h-big -z-10 bg-indigo-900 rounded-full ">
+                </div>
+                <!-- animated text -->
+                <div
+                    class="absolute text-grey-600 top-1/3 left-5 text-xl sm:left-10 sm:text-4xl lg:left-20 font-bold lg:text-5xl">
+                    <span class="text-gray-500">Full Stack</span>
+                    <p id="text" class="text-red-500"> </p>
+                </div>
+                <!-- texts -->
+                <div
+                    class="hidden lg:flex flex-col gap-5 text-justify rounded-md absolute top-0 bottom-0 m-auto right-10 bg-white dark:bg-slate-900 h-fit p-6 w-1/3 shadow-xl">
+                    <h1 class="text-4xl font-bold text-indigo-900 dark:shadow-slate-800">Hi, I'm Tejas</h1>
+                    <p class="text-gray-400">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident quo cum
+                        esse nam eum nisi soluta,
+                        atque vel beatae est.</p>
+                    <a class="bg-indigo-600 text-white text-xl w-fit px-3 py-2 rounded-md font-semibold "
+                        href="https://drive.google.com/file/d/1Y3hvctrExPymMu8fAJetK6SluWY5GDk-/view?usp=share_link"
+                        download=""> Resume</a>
+                </div>
             </div>
-            <!-- animated text -->
-            <div
-                class="absolute text-grey-600 top-1/3 left-5 text-xl sm:left-10 sm:text-4xl lg:left-20 font-bold lg:text-5xl">
-                <span class="text-gray-500">Full Stack</span>
-                <p id="text" class="text-red-500"> </p>
-            </div>
-            <!-- texts -->
-            <div
-                class="hidden lg:flex flex-col gap-5 text-justify rounded-md absolute top-0 bottom-0 m-auto right-10 bg-white dark:bg-slate-900 h-fit p-6 w-1/3 shadow-xl">
-                <h1 class="text-4xl font-bold text-indigo-900 dark:shadow-slate-800">Hi, I'm Tejas</h1>
-                <p class="text-gray-400">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident quo cum
-                    esse nam eum nisi soluta,
-                    atque vel beatae est.</p>
-                <a class="bg-indigo-600 text-white text-xl w-fit px-3 py-2 rounded-md font-semibold "
-                    href="https://drive.google.com/file/d/1Y3hvctrExPymMu8fAJetK6SluWY5GDk-/view?usp=share_link"
-                    download=""> Resume</a>
-            </div>
-      </div>
         </div>
 
         <!-- about me page -->
-        <h3 class=" about-heading w-screen text-center font-bold text-3xl text-indigo-600  "> About Me</h3>
-        <div class="about-container  dark:bg-slate-900" id="aboutsection">
+        <h3 id="aboutsection" class=" about-heading w-screen text-center font-bold text-3xl text-indigo-600  "> About Me
+        </h3>
+        <div class="about-container  dark:bg-slate-900">
 
             <div class="about-wrapper flex ">
                 <!-- left image -->
@@ -159,62 +160,80 @@
 
 
         <h1 class="text-center text-2xl p-3 font-bold text-indigo-600">Project Samples</h1>
-        <div class="project-container  dark:bg-slate-900">
+        <div class="project-container  dark:bg-slate-900" id="work">
             <div class="project-wrapper">
                 <div class="project-card" data-aos="fade-up-right">
                     <div class="image-project">
                         <img src="./images/airbnb.jpg" alt="">
                     </div>
-                    <h3 class="text-xl">Heading</h3>
-                    <div class="info-project text-sm p-3  text-center">Lorem ipsum dolor sit amet consectetur
+                    <div class="proj-info">
+                        <h3 class="text-xl">Hotel Booking Site</h3>
+                        <div class="info-project text-sm p-3  text-center">Technologies used: Node, Express, MongoDB,
+                            Mongoose, JWT, Validator, Dotenv, EJS, CSS, Bootstrap.
+                        </div>
                     </div>
-                    <button class="btn-live">Watch live</button>
+                    <a class="btn-live">Watch live</a>
                 </div>
                 <div class="project-card" data-aos="fade-down">
                     <div class="image-project">
                         <img src="./images/flower-website.jpg" alt="">
                     </div>
-                    <h3 class="text-xl">Heading</h3>
-                    <div class="info-project text-sm p-3  text-center">Lorem ipsum dolor sit amet consectetur
+                    <div class="proj-info">
+                        <h3 class="text-xl">Hotel Booking Site</h3>
+                        <div class="info-project text-sm p-3  text-center">Technologies used: Node, Express, MongoDB,
+                            Mongoose, JWT, Validator, Dotenv, EJS, CSS, Bootstrap.
+                        </div>
                     </div>
-                    <button class="btn-live">Watch live</button>
+                    <a class="btn-live">Watch live</a>
                 </div>
                 <div class="project-card" data-aos="fade-up-left">
                     <div class="image-project">
                         <img src="./images/quiz-app.jpg" alt="">
                     </div>
-                    <h3 class="text-xl">Heading</h3>
-                    <div class="info-project text-sm p-3  text-center">Lorem ipsum dolor sit amet consectetur
+                    <div class="proj-info">
+                        <h3 class="text-xl">Hotel Booking Site</h3>
+                        <div class="info-project text-sm p-3  text-center">Technologies used: Node, Express, MongoDB,
+                            Mongoose, JWT, Validator, Dotenv, EJS, CSS, Bootstrap.
+                        </div>
                     </div>
-                    <button class="btn-live">Watch live</button>
+                    <a class="btn-live">Watch live</a>
                 </div>
                 <div class="project-card" data-aos="fade-up-right">
                     <div class="image-project">
                         <img src="./images/weather-app.jpg" alt="">
                     </div>
-                    <h3 class="text-xl">Heading</h3>
-                    <div class="info-project text-sm p-3  text-center">Lorem ipsum dolor sit amet consectetur
+                    <div class="proj-info">
+                        <h3 class="text-xl">Hotel Booking Site</h3>
+                        <div class="info-project text-sm p-3  text-center">Technologies used: Node, Express, MongoDB,
+                            Mongoose, JWT, Validator, Dotenv, EJS, CSS, Bootstrap.
+                        </div>
                     </div>
-                    <button class="btn-live">Watch live</button>
+                    <a class="btn-live">Watch live</a>
                 </div>
                 <div class="project-card" data-aos="fade-up">
                     <div class="image-project">
                         <img src="https://pngimg.com/d/under_construction_PNG42.png" alt="">
                     </div>
-                    <h3 class="text-xl">Heading</h3>
-                    <div class="info-project text-sm p-3  text-center">Lorem ipsum dolor sit amet consectetur
+                    <div class="proj-info">
+                        <h3 class="text-xl">Hotel Booking Site</h3>
+                        <div class="info-project text-sm p-3  text-center">Technologies used: Node, Express, MongoDB,
+                            Mongoose, JWT, Validator, Dotenv, EJS, CSS, Bootstrap.
+                        </div>
                     </div>
-                    <button class="btn-live">Watch live</button>
+                    <a class="btn-live">Watch live</a>
                 </div>
                 <div class="project-card" data-aos="fade-up-left">
                     <div class="image-project">
                         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHAOs93fBgESugOtE0ZZvLkRb6WlOWVK6B_A&usqp=CAU"
                             alt="">
                     </div>
-                    <h3 class="text-xl">Heading</h3>
-                    <div class="info-project text-sm p-3 text-center">Lorem ipsum dolor sit amet consectetur
+                    <div class="proj-info">
+                        <h3 class="text-xl">Hotel Booking Site</h3>
+                        <div class="info-project text-sm p-3  text-center">Technologies used: Node, Express, MongoDB,
+                            Mongoose, JWT, Validator, Dotenv, EJS, CSS, Bootstrap.
+                        </div>
                     </div>
-                    <button class="btn-live">Watch live</button>
+                    <a class="btn-live">Watch live</a>
                 </div>
 
             </div>
@@ -235,7 +254,8 @@
                     <Map />
                 </div>
                 <div class="right-input-section">
-                    <form action="https://formsubmit.co/el/zipavi" method="POST" class="w-full max-w-lg mx-auto">
+                    <form action="https://formsubmit.co/tejasvispute25@gmail.com" method="POST"
+                        class="w-full max-w-lg mx-auto">
                         <div class="flex flex-wrap -mx-3 mb-1">
                             <div class="w-full px-3">
                                 <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
@@ -285,7 +305,7 @@
         <!-- contactus section ends here -->
 
         <!-- This is Footer secton of my portfolio -->
-        <footer class="bg-gray-800 text-gray-200 mt-10 w-screen" >
+        <footer class="bg-gray-800 text-gray-200 mt-10 w-screen">
             <div class="max-w-7xl mx-auto py-8 px-4 sm:px-6 lg:px-8">
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                     <div class="mb-8">
@@ -306,13 +326,16 @@
                     <div class="mb-8">
                         <h3 class="text-lg font-medium mb-4">Follow Us</h3>
                         <div class="flex items-center">
-                            <a href="#" class="text-gray-400 hover:text-white mr-4"><i
-                                    class="fab fa-facebook fa-lg"></i></a>
-                            <a href="#" class="text-gray-400 hover:text-white mr-4"><i
-                                    class="fab fa-twitter fa-lg"></i></a>
+                            <!-- <a href="#" class="text-gray-400 hover:text-white mr-4"><i
+                                    class="fab fa-facebook fa-lg"></i></a> -->
+                            <!-- <a href="#" class="text-gray-400 hover:text-white mr-4"><i
+                                    class="fab fa-twitter fa-lg"></i></a> -->
                             <a href="#" class="text-gray-400 hover:text-white mr-4"><i
                                     class="fab fa-instagram fa-lg"></i></a>
-                            <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-linkedin fa-lg"></i></a>
+                            <a href="https://github.com/TejaVispute" class="text-gray-400 hover:text-white mr-4"><i
+                                    class="fa-brands fa-github fa-lg"></i></a>
+                            <a href="https://www.linkedin.com/in/tejasvispute/"
+                                class="text-gray-400 hover:text-white"><i class="fab fa-linkedin fa-lg"></i></a>
                         </div>
                     </div>
                     <div>

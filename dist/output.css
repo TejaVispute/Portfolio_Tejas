@@ -627,6 +627,11 @@ video {
   margin-right: auto;
 }
 
+.my-5 {
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
 .mb-1 {
   margin-bottom: 0.25rem;
 }
@@ -702,10 +707,6 @@ video {
 
 .h-screen {
   height: 100vh;
-}
-
-.h-full {
-  height: 100%;
 }
 
 .w-1\/3 {
