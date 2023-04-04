@@ -46,7 +46,7 @@ body {
 
 /* about css */
 .about-heading {
-    margin: 1rem 0;
+    /* margin: 1rem 0; */
     padding: 10px 0;
 }
 
@@ -118,7 +118,7 @@ body {
 
 .project-container .project-wrapper {
     width: 85%;
-    margin: 1rem auto;
+    margin: 0 auto;
     /* background-color: blanchedalmond; */
     height: 100%;
     display: grid;
@@ -207,7 +207,9 @@ body {
         /* grid-template-rows: 1fr 1fr; */
     }
 
-    .project-container .project-wrapper>div {}
+    .project-container .project-wrapper{
+        margin: 0 auto;
+    }
 }
 
 

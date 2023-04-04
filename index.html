@@ -51,11 +51,11 @@
                             <a href="#contact">Contact</a>
                         </li>
                     </ul>
-                    <span class="mr-20 hidden md:block "><i
+                    <span class="mr-20 hidden md:block "><i id="moon"
                             class="fa-solid fa-moon cursor-pointer text-2xl dark:text-white"></i></span>
 
                     <span id="hamburger" class="md:hidden mr-6 text-3xl cursor-pointer z-50"><i
-                            class="fa-solid fa-bars "></i></span>
+                            class="fa-solid fa-bars"></i></span>
 
                     <ul id="menu"
                         class=" hidden absolute left-0 top-0 bg-indigo-900 w-full p-10 rounded-b-3xl space-y-10 text-white text-center">
@@ -113,7 +113,8 @@
         </div>
 
         <!-- about me page -->
-        <h3 id="aboutsection" class=" about-heading w-screen text-center font-bold text-3xl text-indigo-600  "> About Me
+        <h3 id="aboutsection"
+            class=" about-heading w-screen text-center font-bold text-3xl text-indigo-600  dark:bg-slate-900 "> About Me
         </h3>
         <div class="about-container  dark:bg-slate-900">
 
@@ -124,7 +125,7 @@
                 </div>
                 <!-- right content -->
                 <div class="right-about-wrapper">
-                    <h1 class="text-3xl font-medium">Technology Know</h1>
+                    <h1 class="text-3xl font-medium dark:text-white">Technology Know</h1>
 
                     <p class="text-gray-400 text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Expedita eos cum
@@ -159,14 +160,14 @@
         <!-- My Projects -->
 
 
-        <h1 class="text-center text-2xl p-3 font-bold text-indigo-600">Project Samples</h1>
         <div class="project-container  dark:bg-slate-900" id="work">
+            <h1 class="text-center text-2xl p-3 font-bold text-indigo-600  dark:bg-slate-900">Project Samples</h1>
             <div class="project-wrapper">
                 <div class="project-card" data-aos="fade-up-right">
                     <div class="image-project">
                         <img src="./images/airbnb.jpg" alt="">
                     </div>
-                    <div class="proj-info">
+                    <div class="proj-info dark:text-gray-300">
                         <h3 class="text-xl">Hotel Booking Site</h3>
                         <div class="info-project text-sm p-3  text-center">Technologies used: Node, Express, MongoDB,
                             Mongoose, JWT, Validator, Dotenv, EJS, CSS, Bootstrap.
@@ -178,7 +179,7 @@
                     <div class="image-project">
                         <img src="./images/flower-website.jpg" alt="">
                     </div>
-                    <div class="proj-info">
+                    <div class="proj-info  dark:text-gray-300">
                         <h3 class="text-xl">Hotel Booking Site</h3>
                         <div class="info-project text-sm p-3  text-center">Technologies used: Node, Express, MongoDB,
                             Mongoose, JWT, Validator, Dotenv, EJS, CSS, Bootstrap.
@@ -190,7 +191,7 @@
                     <div class="image-project">
                         <img src="./images/quiz-app.jpg" alt="">
                     </div>
-                    <div class="proj-info">
+                    <div class="proj-info  dark:text-gray-300">
                         <h3 class="text-xl">Hotel Booking Site</h3>
                         <div class="info-project text-sm p-3  text-center">Technologies used: Node, Express, MongoDB,
                             Mongoose, JWT, Validator, Dotenv, EJS, CSS, Bootstrap.
@@ -202,7 +203,7 @@
                     <div class="image-project">
                         <img src="./images/weather-app.jpg" alt="">
                     </div>
-                    <div class="proj-info">
+                    <div class="proj-info  dark:text-gray-300">
                         <h3 class="text-xl">Hotel Booking Site</h3>
                         <div class="info-project text-sm p-3  text-center">Technologies used: Node, Express, MongoDB,
                             Mongoose, JWT, Validator, Dotenv, EJS, CSS, Bootstrap.
@@ -214,7 +215,7 @@
                     <div class="image-project">
                         <img src="https://pngimg.com/d/under_construction_PNG42.png" alt="">
                     </div>
-                    <div class="proj-info">
+                    <div class="proj-info  dark:text-gray-300">
                         <h3 class="text-xl">Hotel Booking Site</h3>
                         <div class="info-project text-sm p-3  text-center">Technologies used: Node, Express, MongoDB,
                             Mongoose, JWT, Validator, Dotenv, EJS, CSS, Bootstrap.
@@ -227,7 +228,7 @@
                         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHAOs93fBgESugOtE0ZZvLkRb6WlOWVK6B_A&usqp=CAU"
                             alt="">
                     </div>
-                    <div class="proj-info">
+                    <div class="proj-info  dark:text-gray-300">
                         <h3 class="text-xl">Hotel Booking Site</h3>
                         <div class="info-project text-sm p-3  text-center">Technologies used: Node, Express, MongoDB,
                             Mongoose, JWT, Validator, Dotenv, EJS, CSS, Bootstrap.
@@ -244,9 +245,9 @@
 
 
         <!-- This is contact Us section -->
-        <section class='contact-us-container p-5  dark:bg-slate-900' id='contact'>
+        <section class='contact-us-container p-5  dark:bg-slate-900 ' id='contact'>
             <h1 class='p-5 text-center text-3xl font-bold text-indigo-600'>Contact </h1>
-            <h4 class=" text-center text-2xl font-bold text-black pb-5">Have Question ?</h4>
+            <h4 class=" text-center text-2xl font-bold text-black pb-5  dark:text-gray-300" >Have Question ?</h4>
             <p class="text-center text-sm font-bold text-gray-500 pb-5">Do You have any idea? Let's discuss and sew what
                 we can do together</p>
             <div class="contact-us-wrapper">
@@ -258,7 +259,7 @@
                         class="w-full max-w-lg mx-auto">
                         <div class="flex flex-wrap -mx-3 mb-1">
                             <div class="w-full px-3">
-                                <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                                <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2  dark:text-gray-300"
                                     for="name">
                                     Name
                                 </label>
@@ -269,7 +270,7 @@
                         </div>
                         <div class="flex flex-wrap -mx-3 mb-1">
                             <div class="w-full px-3">
-                                <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                                <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2  dark:text-gray-300"
                                     for="email">
                                     Email
                                 </label>
@@ -280,7 +281,7 @@
                         </div>
                         <div class="flex flex-wrap -mx-3 mb-1">
                             <div class="w-full px-3">
-                                <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                                <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2  dark:text-gray-300"
                                     for="message">
                                     Message
                                 </label>
@@ -305,7 +306,7 @@
         <!-- contactus section ends here -->
 
         <!-- This is Footer secton of my portfolio -->
-        <footer class="bg-gray-800 text-gray-200 mt-10 w-screen">
+        <footer class="bg-gray-800 text-gray-200  w-screen  dark:bg-slate-900">
             <div class="max-w-7xl mx-auto py-8 px-4 sm:px-6 lg:px-8">
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                     <div class="mb-8">
@@ -319,7 +320,7 @@
                         <ul class="text-sm">
                             <li><a href="#" class="text-gray-400 hover:text-white">Home</a></li>
                             <li><a href="#" class="text-gray-400 hover:text-white">Services</a></li>
-                            <li><a href="#" class="text-gray-400 hover:text-white">Blog</a></li>
+                            <!-- <li><a href="#" class="text-gray-400 hover:text-white">Blog</a></li> -->
                             <li><a href="#" class="text-gray-400 hover:text-white">Contact Us</a></li>
                         </ul>
                     </div>
